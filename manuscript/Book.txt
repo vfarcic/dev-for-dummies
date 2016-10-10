@@ -1,0 +1,12 @@
+00-preface.md
+01-practices.md
+02-source-code.md
+03-sdlc.md
+04-compiling.md
+05-testing.md
+06-binaries.md
+07-virtualization.md
+08-xaas.md
+09-oss.md
+10-subscription.md
+11-other.md
