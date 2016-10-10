@@ -100,7 +100,7 @@ Most commonly defined stages of an waterfall project are as follows.
 * Deployment (or installation)
 * Maintenance
 
-Waterfall model can be useful for static projects where there will not be many changes. For most others it is outdated, too inflexible and too expensive.
+Waterfall model can be useful for static projects where there will not be many changes. For most others it is outdated, too inflexible and too expensive. However, it is still used in enterprises.
 
 Often overlooked aspect of the waterfall model is its indirect effect on the company structure and the organization of teams that tends to create silos of highly specialized people and the expense of decreased collaboration. There is an increase in management costs and creation of rigid environment with little space left for improvement.
 
@@ -140,7 +140,7 @@ The Agile Manifesto is based on twelve principles:
 
 Iterative development was created as a response to inefficiencies and problems found in the waterfall model. Most, if not all, agile models are based on iterations.
 
-**The general idea is to develop a system through iterations (repeated cycles) and incrementally (in small portions of time). Through them, team members or stakeholders can learn from their mistakes and apply that knowledge on the next iteration.**
+**The general idea is to develop a system through iterations (repeated cycles) and incrementally (in small portions of time). Through them, team members or stakeholders can learn from their mistakes and apply that knowledge in the next iteration.**
 
 Working through iterations means that the development of an application is split into smaller chunks. In each iteration features are defined, designed, developed and tested. Iteration cycles are repeated until fully functional software is ready to be delivered to production. The process does not try to start with the full set of requirements and design. Instead, the team tries to prepare just what is needed for the successful delivery of the next iteration.
 
@@ -209,7 +209,7 @@ The Agile movement started with the manifesto.
 
 Agile software development is based on iterative and incremental development model.
 
-The general idea is to develop a system through iterations (repeated cycles) and incrementally (in small portions of time). Through them, team members or stakeholders can learn from their mistakes and apply that knowledge on the next iteration. One of the main advantages of iterative development is that it allows more flexibility to adapt to changes.
+The general idea is to develop a system through iterations (repeated cycles) and incrementally (in small portions of time). Through them, team members or stakeholders can learn from their mistakes and apply that knowledge in the next iteration. One of the main advantages of iterative development is that it allows more flexibility to adapt to changes.
 
 The most commonly practiced Agile flavours are eXtreme Programming (XP) and Scrum. XP is mostly focused on technical aspects of the software development life-cycle while Scrum puts more attention to human and management aspects of the software development life-cycle.
 
