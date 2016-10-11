@@ -161,7 +161,11 @@ The first command (`git commit`) commited all the changed files. Git commit is e
 
 Further on, we pushed the code to repository. From now on, every other member of the team that has the access to the repository, can review the changes we made.
 
-TODO: Continue with UI
+Let's confirm that the branch and the changes we made are indeed pushed to the remote repository. Please open the repository in the GitHub UI. It is located in [https://github.com/vfarcic/fake-repo](https://github.com/vfarcic/fake-repo). Click the "Branches" link and observe that the branch you created is listed.
+
+![The list of branches in the GitHub UI](images/02-source-code/github-branches.png)
+
+Feel free to experiment. Modify some of the files or create new ones. Commit and push the changes to the remote repository and observe them from the UI. Once you're done, we'll proceed to the next stage. We'll merge our change with the `master` branch.
 
 ## Merge
 
