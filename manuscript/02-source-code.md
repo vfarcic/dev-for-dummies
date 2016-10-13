@@ -39,6 +39,8 @@ Naturally, if many people are working on the same set of files, there must be a 
 
 In a way, source code repository serves a similar function as Google Docs does for documents. You can choose to edit a file from your browser. In that case, changes you do would be merged with the changes done by other people working on the same document. On the other hand, you might choose to download the latest version of a document, make some changes on your laptop and, once you're done, upload the modified document to Google Docs. In such a scenario, the version you upload will overwrite the document wrote by someone else becoming a new version. You can also choose to see the history of a document that would show you all the changes made by you or any other person that has access to it.
 
+## Tools
+
 Developers use a similar approach. The major difference is that their tools are more sophisticated and allow much bigger control of the files stored in a source code repository.
 
 **Some of the most popular tools used as source code repository are [Concurrent Versions System (CVS)](http://www.nongnu.org/cvs/), [Subversion (SVN)](https://subversion.apache.org/), and [Git](https://git-scm.com/).**
@@ -218,4 +220,4 @@ A source code repository is a file archive and hosting facility where a large am
 
 Some of the most popular tools used as source code repository are [Concurrent Versions System (CVS)](http://www.nongnu.org/cvs/), [Subversion (SVN)](https://subversion.apache.org/), and [Git](https://git-scm.com/).
 
-We use pulling to get the latest code locally, branching to create copies that allow us to work independently from others, committing and pushing to propagate our changes to the remote location, and, finally, merging to combine our changes with those made by others. The `master` branch is the *golden* source that is a reflection of the code deployed to production. All other branches are, in most cases, temporary places where we keep our code until it's merged to the `master`.
+We use pulling (or checking-out) to get the latest code locally, branching to create copies that allow us to work independently from others, committing and pushing to propagate our changes to the remote location, and, finally, merging to combine our changes with those made by others. The `master` branch is the *golden* source that is a reflection of the code deployed to production. All other branches are, in most cases, temporary places where we keep our code until it's merged to the `master`.
