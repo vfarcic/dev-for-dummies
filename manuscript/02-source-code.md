@@ -169,16 +169,53 @@ Feel free to experiment. Modify some of the files or create new ones. Commit and
 
 ## Merge
 
-TODO
+In most cases, teams consider a feature ready for deployment when it is merged into the `master` branch. Developers would write code and commit it to a branch they created and, once they are finished, merge it to `master`. From that moment on, the code is ready to move through a pipeline that will test it, build it, and run it in production. Actually, SDSLC is more complicated than that but we'll get there soon. For now, think of the `master` branch as a place where we put the finished code.
 
-## Versioning
+First things first. We want to switch back to the `master` branch and pull the latest code from the remote repository.
 
-TODO
+```bash
+git checkout master
 
-## Building
+git pull
+```
 
-TODO
+We used the `checkout` command to switch to the `master` branch. That was followed with the `pull` command that updated our local copy with the code stored remotely.
 
-## UI
+Now we can merge
 
-TODO
+```bash
+git merge john-smith
+```
+
+The `merge` commmand combined the changes done in the `john-smith` branch with those in the `master`. If there was a conflict, Git would let us know.
+
+The output is as follows.
+
+```
+Updating bc6fc30..ddfb6be
+Fast-forward
+ source/dummy-code.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+We can see that one file changed, that one line was inserted and one was deleted.
+
+The merge currently exists only on the laptop. We should push it to the remote repository and make it available to others.
+
+```bash
+git push origin master
+```
+
+We can confirm that the merge was indeed pushed from the GitHub UI. Please open the [fake-repo](https://github.com/vfarcic/fake-repo) repository, select the `source` directory and open the `dummy-code.md` file. You will see that its content changed.
+
+## Summary
+
+That was a very short introduction to source code and repositories. It was just enough for you to have a general understanding what the code is and how it is managed inside the repositories.
+
+Source code is a text listing of commands to be compiled or assembled into an executable computer program.
+
+A source code repository is a file archive and hosting facility where a large amount of source code is kept, either publicly or privately.
+
+Some of the most popular tools used as source code repository are [Concurrent Versions System (CVS)](http://www.nongnu.org/cvs/), [Subversion (SVN)](https://subversion.apache.org/), and [Git](https://git-scm.com/).
+
+We use pulling to get the latest code locally, branching to create copies that allow us to work independently from others, committing and pushing to propagate our changes to the remote location, and, finally, merging to combine our changes with those made by others. The `master` branch is the *golden* source that is a reflection of the code deployed to production. All other branches are, in most cases, temporary places where we keep our code until it's merged to the `master`.
