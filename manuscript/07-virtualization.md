@@ -73,13 +73,28 @@ And then containers become popular.
 
 ## Containers
 
-TODO
+The major problem with virtual machines is their overhead resource usage. Hypervisor needs some amount of resources. On top of that, each VM has a separate OS instance which also eats resources. If, for example, we have a physical server with ten VMs, there will be eleven operating systems. We would have a hypervisor and ten OSes, one for each VM. Compare that with bare metal that would run only one OS, and the difference can be substantial.
 
-## Difference between virt and cont
+However, most organizations moved to virtualization because the benefits it provides are often greater than disadvantages. We can create VMs quickly and easily. Each application can sit in its own VM, isolated from the rest. Not to mention easier backups, disaster recovery, benefits to not only production, but also development environments, and so on. There are, indeed, great benefits behind virtualization but they come at a cost. Could get some of those benefits without virtualization? The answer is yes. We can use containers.
 
-TODO
+Containers sit on top of a physical server and its host OS. That, in itself, safes resources since we do not need to spin up many VMs with one OS in each. Even if containers are used on top of VMs, the number of virtual machines per physical server tends to be much lower thus, still reducing the number of operating systems. As a result, we can put two to three times more containers on a server than virtual machines.
+
+If performance would be the only benefit, there would not be so much hype around containers. Indeed, there are many other advantages. They are fast. Much faster than VMs. While it might take minutes to start a single virtual machine, a container startup time is measured in seconds, if not milliseconds.
+
+When we combine low resource usage with very short initialization times, new opportunities are opened. When running in production, we can easily update a release by deploying a new container, we can scale up and down in no time, and so on. On top of all that, developers and testers greatly benefits from containers. They can be run on laptops, testing servers, production, everywhere. The result is a very way to develop, test, and deploy software.
+
+What makes containers behave the same no matter where they run lies in immutability. A container is a combination of images that are unchangeable. We create images that contain everything that our application needs. Build artifacts, configuration files, web server, and so on. Since images cannot be modified and they have everything an application needs, the result is that a container behaves the same no matter where it runs. It'll exercise the same behavior on a cheap laptop as well as on a big production server. The only exception is the speed since that depends on underlying resources.
+
+Are containers removing the need for VMs? That depends on a use case. If we need resource separation and security is the most important concern, VMs are probably a good choice. For most other use cases, containers proved to be a better option.
+
+Can we combine VMs and containers? We can, and we often do. The result can be the best of both world. We have the immutability, the speed, and quite a few other benefits containers provide as well as resource isolation (when needed), and security hardening from VMs. The end result are fewer VMs with containers running inside.
+
+Does that mean that everyone runs containers inside VMs? Not really. Many organizations run containers on bare metal. It all depends on evaluation of all pros and cons of a given use case.
+
+Containers exist for a long time but only recently they become popular. As an example, Google uses container for quite a few years. The reason for such a slow adoption lies in complexity. Until Docker came into existence, containers were very difficult to create and manage. As a result, the cost of having containers (in human hours and required knowledge) was too high. Docker simplified the whole process making containers so easy to use that any organization could master it in a relatively short time.
 
 ## Cloud
+
 
 TODO
 
