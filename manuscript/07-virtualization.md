@@ -1,4 +1,4 @@
-# Virtualization and Containers
+# Servers, Virtualization, And Containers
 
 Software we're building would be useless with a place to run. If we exclude desktop applications (those that run on your laptop), everything we create runs on servers. What are they? *A server is a computer or a device on a network that manages network resources.* That was one more of those definitions understood only by those who already know what a server is. If we translate it to "plan English", a server is a computer that runs our software. It is, in a way, not much conceptually different than the computer you're using. The only important difference is that servers are optimized to "serve" applications. The only notable difference is that servers often to not have a monitor since they are not used by us directly. They tend to be more potent than laptop but they still have the same components. There is memory, hard disk, CPU, and so on.
 
