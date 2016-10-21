@@ -77,9 +77,9 @@ The major problem with virtual machines is their overhead resource usage. Hyperv
 
 However, most organizations moved to virtualization because the benefits it provides are often greater than disadvantages. We can create VMs quickly and easily. Each application can sit in its own VM, isolated from the rest. Not to mention easier backups, disaster recovery, benefits to not only production, but also development environments, and so on. There are, indeed, great benefits behind virtualization but they come at a cost. Could get some of those benefits without virtualization? The answer is yes. We can use containers.
 
-Containers sit on top of a physical server and its host OS. That, in itself, safes resources since we do not need to spin up many VMs with one OS in each. Even if containers are used on top of VMs, the number of virtual machines per physical server tends to be much lower thus, still reducing the number of operating systems. As a result, we can put two to three times more containers on a server than virtual machines.
+Containers sit on top of a physical server and its host OS. That, in itself, safes resources since we do not need to spin up many VMs with one OS in each. Even if containers are used on top of VMs, the number of virtual machines per physical server tends to be much lower thus, still reducing the number of operating systems. As the result, containers are dramatically more efficient that VMs. We can put two to three times more containers on a server than virtual machines. A container with the whole application inside can be as small as a few MB while VMs are typically several GB big just for the guest Operating System (OS). In addition, Docker containers have a shared underlying host OS which means they can be packed on bare metal much more densely than VMs.
 
-If performance would be the only benefit, there would not be so much hype around containers. Indeed, there are many other advantages. They are fast. Much faster than VMs. While it might take minutes to start a single virtual machine, a container startup time is measured in seconds, if not milliseconds.
+If performance would be the only benefit, there would not be so much hype around containers. Indeed, there are many other advantages. They are fast. Much faster than VMs. While it might take minutes to start a single virtual machine, a container startup time is measured in seconds, if not milliseconds. They can be created and destroyed almost instantaneously as opposed to VMs that are much heavier.
 
 When we combine low resource usage with very short initialization times, new opportunities are opened. When running in production, we can easily update a release by deploying a new container, we can scale up and down in no time, and so on. On top of all that, developers and testers greatly benefits from containers. They can be run on laptops, testing servers, production, everywhere. The result is a very way to develop, test, and deploy software.
 
@@ -93,11 +93,13 @@ Does that mean that everyone runs containers inside VMs? Not really. Many organi
 
 Containers exist for a long time but only recently they become popular. As an example, Google uses container for quite a few years. The reason for such a slow adoption lies in complexity. Until Docker came into existence, containers were very difficult to create and manage. As a result, the cost of having containers (in human hours and required knowledge) was too high. Docker simplified the whole process making containers so easy to use that any organization could master it in a relatively short time.
 
-## Cloud
+To summarize, some of the potential advantages of bare metal servers are as follows.
 
+* Speed
+* Low resource usage
+* Immutability
+* Efficiency
 
-TODO
+Some of the potential disadvantages are as follows.
 
-AWS claims their performance is very close to bare metal.
-No worries about hypervisor
-Choose any OS image
+* Resource isolation
