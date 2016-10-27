@@ -108,6 +108,8 @@ And then came the iterative and incremental development model, better known as A
 
 ### The World Before It Become Agile
 
+TODO: Put to the presentation
+
 To understand the change that was brought with agile practices, you need to have a picture of the software world before it. Most companies were using the waterfall methodology. A typical project would last for month, if not years. It consisted of phases like requirements gathering, development, and testing (just to name a few). Each of those phases lasted for weeks or months and were performed by separate teams. As a result, we got the "silos" effect. Each team had a very limited communication with the other and the knowledge of what should be done was mainly based on the artifacts (e.g. requirements document) produced by the team that finished the previous phase. As a result, teams were working on their tasks based on those artifacts.
 
 Waterfall teams often did not understand the full picture of what should be done. The "silos" effect resulted in a very poor communication and very specialized set of skills. If you are, for example, a front-end developer, you would have a strong dependency on other teams to deliver parts of the project you depend on. As a result, waiting time was often considerable. If you would, for example, require a back-end service before proceeding with your front-end application, you would wait for the other team to deliver it. That wait time ultimately increased the costs of the projects and, more importantly, resulted in poorly designed applications. Even though specialization is a necessity (no one can be an equal expert in everything), lack of knowledge about the system as a whole prevented us from creating optimum solutions.
@@ -230,6 +232,8 @@ The most commonly practiced Agile flavours are eXtreme Programming (XP) and Scru
 With time, the industry realized that Agile is not enough and the DevOps movement was born.
 
 ## The World Before DevOps
+
+TODO: Put to the presentation
 
 How did the world look like before we adopted DevOps practices? To understand the current situation, you'd need to understand the pitfalls of agile development.
 
