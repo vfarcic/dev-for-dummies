@@ -106,6 +106,18 @@ Often overlooked aspect of the waterfall model is its indirect effect on the com
 
 And then came the iterative and incremental development model, better known as Agile.
 
+### The World Before It Become Agile
+
+To understand the change that was brought with agile practices, you need to have a picture of the software world before it. Most companies were using the waterfall methodology. A typical project would last for month, if not years. It consisted of phases like requirements gathering, development, and testing (just to name a few). Each of those phases lasted for weeks or months and were performed by separate teams. As a result, we got the "silos" effect. Each team had a very limited communication with the other and the knowledge of what should be done was mainly based on the artifacts (e.g. requirements document) produced by the team that finished the previous phase. As a result, teams were working on their tasks based on those artifacts.
+
+Waterfall teams often did not understand the full picture of what should be done. The "silos" effect resulted in a very poor communication and very specialized set of skills. If you are, for example, a front-end developer, you would have a strong dependency on other teams to deliver parts of the project you depend on. As a result, waiting time was often considerable. If you would, for example, require a back-end service before proceeding with your front-end application, you would wait for the other team to deliver it. That wait time ultimately increased the costs of the projects and, more importantly, resulted in poorly designed applications. Even though specialization is a necessity (no one can be an equal expert in everything), lack of knowledge about the system as a whole prevented us from creating optimum solutions.
+
+Another example of a problem produced by "silos" are automated tests. A project would have development and a testing teams that operated with different objectives and under different management. As a result, developers did not have an incentive to test the applications they were working on. After all, that's the job of a different team. On the other hand, testers did not have the knowldge of the internals of the application developers were producing. How could they know what's inside when they did not work with developers? Testers would receive a finished application that would be a black box for them. They would know what's outside but not what is below the surface. As a result, test coverage and quality was generally very low. On top of that, testers working in a separate department would not have coding skills so their testing would be, in many cases, fully manual and last for weeks, if not months. Without automated tests, even a simple change in the code would require a full regression testing since testers, due to their lack of knowledge about the internals, could not concentrate only on the parts that changed nor they could execute automated tests since they were very limited or non-existent. Testers would act as a police trying to find a fault in the system instead helping developers create applications with the quality baked in. Developers, on the other hand, had no incentive to test their own work since that was a job of testing teams.
+
+According to the Standish Group, 29% of waterfall projects done since the year 2000 failed while 57% were challenged. The processes we have today are more mature and we could expect even worst results before 2000. Yet, many companies even today having trouble moving away from waterfall.
+
+And then came iterative development better known as agile.
+
 ## The Agile Model
 
 In February 2001, 17 software developers met at the Snowbird resort in Utah to discuss lightweight development methods. They published the Manifesto for Agile Software Development. The manifesto, and the practices that followed it, we based on their individual experiences and best practices.
@@ -137,16 +149,6 @@ The Agile Manifesto is based on twelve principles:
 **Agile software development is based on iterative and incremental development model.**
 
 ### Iterative and Incremental Development
-
-To understand the change that was brought with agile practices, you need to have a picture of the software world before it. Most companies were using the waterfall methodology. A typical project would last for month, if not years. It consisted of phases like requirements gathering, development, and testing (just to name a few). Each of those phases lasted for weeks or months and were performed by separate teams. As a result, we got the "silos" effect. Each team had a very limited communication with the other and the knowledge of what should be done was mainly based on the artifacts (e.g. requirements document) produced by the team that finished the previous phase. As a result, teams were working on their tasks based on those artifacts.
-
-Waterfall teams often did not understand the full picture of what should be done. The "silos" effect resulted in a very poor communication and very specialized set of skills. If you are, for example, a front-end developer, you would have a strong dependency on other teams to deliver parts of the project you depend on. As a result, waiting time was often considerable. If you would, for example, require a back-end service before proceeding with your front-end application, you would wait for the other team to deliver it. That wait time ultimately increased the costs of the projects and, more importantly, resulted in poorly designed applications. Even though specialization is a necessity (no one can be an equal expert in everything), lack of knowledge about the system as a whole prevented us from creating optimum solutions.
-
-Another example of a problem produced by "silos" are automated tests. A project would have development and a testing teams that operated with different objectives and under different management. As a result, developers did not have an incentive to test the applications they were working on. After all, that's the job of a different team. On the other hand, testers did not have the knowldge of the internals of the application developers were producing. How could they know what's inside when they did not work with developers? Testers would receive a finished application that would be a black box for them. They would know what's outside but not what is below the surface. As a result, test coverage and quality was generally very low. On top of that, testers working in a separate department would not have coding skills so their testing would be, in many cases, fully manual and last for weeks, if not months. Without automated tests, even a simple change in the code would require a full regression testing since testers, due to their lack of knowledge about the internals, could not concentrate only on the parts that changed nor they could execute automated tests since they were very limited or non-existent. Testers would act as a police trying to find a fault in the system instead helping developers create applications with the quality baked in. Developers, on the other hand, had no incentive to test their own work since that was a job of testing teams.
-
-According to the Standish Group, 29% of waterfall projects done since the year 2000 failed while 57% were challenged. The processes we have today are more mature and we could expect even worst results before 2000. Yet, many companies even today having trouble moving away from waterfall.
-
-And then came iterative development better known as agile.
 
 Iterative development was created as a response to inefficiencies and problems found in the waterfall model. Most, if not all, agile models are based on iterations.
 
@@ -227,11 +229,7 @@ The most commonly practiced Agile flavours are eXtreme Programming (XP) and Scru
 
 With time, the industry realized that Agile is not enough and the DevOps movement was born.
 
-## The DevOps Model
-
-Software industry is changing rapidly. The challenges from a few years, or even months ago might not be the same as those we are facing today. When Agile appeared, it tried to solve the problems related to some of the development practices and issues created by the waterfall management style. Among other things, Agile tried to create self-sufficient teams capable of rapid development of high quality products. It removed some of the silos that were preventing engineers from delivering results in an effective way. At that time, being self-sufficient meant that the team is capable of gathering requirements, developing the code, and testing it. With time, we realized that is not enough. **Agile, in a way, excluded professionals in charge of software deployments and monitoring. DevOps was created as a way to remedy that.**
-
-Why didn't we have DevOps before? The short answer is that the needs changed. While in the past we could be well off with only a few servers, today we are dealing with huge clusters. Cloud approach to infrastructure is becoming prevalent. Fault tolerance and high availability are much more important today then they were before. A single minute of a downtime might cause our business to come to ruin.
+## The World Before DevOps
 
 How did the world look like before we adopted DevOps practices? To understand the current situation, you'd need to understand the pitfalls of agile development.
 
@@ -244,6 +242,12 @@ The main objective of a development or an agile team is to finish new features a
 That changed with the introduction of continuous delivery (CD) and deployment (CDP) processes. In a nutshell, the idea is to have an automated pipeline that would allow teams to deploy a feature every time the code is committed to the repository. For such a system to work, the pipeline had to be fully automated. The code has to be built and tested with such a great coverage that we have almost absolute certainty that it is safe to deploy to production without any human intervention. For such processes to work, operations had to be automated as well and people responsible for maintaining the live systems had to be included in the teams. They had to gain coding skills without which automation is not possible. On the other hand, developers had to gain a better understanding of the deployment processes and system monitoring so that they can design their applications around those proccesses.
 
 Hence DevOps was born and CD and CDP pipelines became part of the automated processes we employ on a continuous bases.
+
+## The DevOps Model
+
+Software industry is changing rapidly. The challenges from a few years, or even months ago might not be the same as those we are facing today. When Agile appeared, it tried to solve the problems related to some of the development practices and issues created by the waterfall management style. Among other things, Agile tried to create self-sufficient teams capable of rapid development of high quality products. It removed some of the silos that were preventing engineers from delivering results in an effective way. At that time, being self-sufficient meant that the team is capable of gathering requirements, developing the code, and testing it. With time, we realized that is not enough. **Agile, in a way, excluded professionals in charge of software deployments and monitoring. DevOps was created as a way to remedy that.**
+
+Why didn't we have DevOps before? The short answer is that the needs changed. While in the past we could be well off with only a few servers, today we are dealing with huge clusters. Cloud approach to infrastructure is becoming prevalent. Fault tolerance and high availability are much more important today then they were before. A single minute of a downtime might cause our business to come to ruin.
 
 With time, we developed sophisticated processes and tools that help us provision servers, and deploy and monitor our code. We are on a quest of running software that is always working (zero-downtime) and highly responsive no matter whether we have hundreds, thousands, or millions users using our service at the same time (high availability). On top of all that, new releases are being continuously deployed to our servers (continuous deployment) introducing new problems that might put the system at risk. The way we are trying to overcome all those, and quite a few other challenges is DevOps.
 
