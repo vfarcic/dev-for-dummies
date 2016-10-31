@@ -48,6 +48,12 @@ On top of that complexity, add conditional logic. In many cases, it is not enoug
 
 All those needs, and many others, had to be addressed in Jenkins if it was to continue being a dominant CI/CD tool. Fortunately, developers behind the project understood those needs and, as the result, the Jenkins Pipeline become the first class citizen. The future of Jenkins lies in a transition from Freestlyle chained jobs to a single pipeline expressed as code. Modern delivery flows cannot be expressed and easily maintained through UI drag and drop features, nor through chained jobs. They can neither be defined through YML (Yet Another Markup Language) definitions proposed by some of the newer tools (which I’m not going to name). We need to go back to code as a primary way to define not only the applications and services we are developing but almost everything else.
 
+## What is Jenkins Pipeline?
+
+TODO: Put to the presentation
+
+TODO: Write
+
 ## The Challenges When Transitioning From FreeStyle Jobs Towards Jenkins Pipeline
 
 TODO: Put to the presentation
@@ -62,13 +68,7 @@ Finally, the Pipeline encourages teams to define the whole CD flow as a single j
 
 Coding combined with decentralization and the need to restructure the organization we work in can seem daunting at first. However, the effort required as investment in change pays of quickly and allows us to get closer to the goal commonly called continuous delivery or deployment. It allows us to be faster and more reliable at the same time.
 
-TODO: Write
-
 TODO: What is Jenkins Pipeline
-
-TODO: Why is it such a big change for Jenkins users in terms of job definition and configuration (read=not compatible with the old way)
-
-TODO: Why is it important to convince people that Pipeline is the new way
 
 ## The Difference Between Jenkins OSS and Enterprise
 
